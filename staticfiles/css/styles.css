@@ -1,5 +1,5 @@
 body {
-    font-family: "Fira", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     margin: 0px;
 }
 
@@ -8,17 +8,28 @@ body {
     grid-template-columns: 1fr;
 }
 
+/* Nav styles */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 34px;
 }
 
+.nav-wrapper img {
+    margin-top:-16px;
+    width: 50px;
+    margin-right: 21px;
+    justify-content: center;
+}
+
+.left-side {
+    display: flex;
+}
+
 .right-side {
     display: flex;
 }
 
-/* Nav styles */
 .nav-wrapper > .right-side > div {
     margin-right: 21px;
     text-transform: uppercase;
@@ -92,12 +103,14 @@ body {
 
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
-    color: indianred; 
+    color: firebrick; 
 }
 
 .logo-wrapper img {
-    width: 50%;
-    margin-bottom: 21px;
+    top: 21px;
+    width: 43%;
+    margin-bottom: 16px;
+    justify-content: center;
 }
 
 .img-darken {
@@ -106,20 +119,33 @@ body {
 }
 
 /* About styles */
-.two-column-wrapper {
+
+.about-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
-.profile-image-wrapper img {
-    height: 50%;
-    width: 50%;
+.about-item-wrapper {
+    position: relative;
 }
 
-.profile-content-wrapper {
-    padding: 30px;
+.about-profile-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
 }
 
-.profile-content-wrapper h1 {
-    color: indianred;
+.about-content-wrapper h1 {
+    color: firebrick;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content-wrapper p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: 75px;
 }

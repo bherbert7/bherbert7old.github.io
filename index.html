@@ -3,46 +3,58 @@
 <head>
     <meta charset="utf-8">
     <title>Brian Herbert - Portfolio Home</Title>
-    <link href="https://fonts.googleis.com/css?family=Fira" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="staticfiles/css/styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="nav-wrapper">
+        <!-- header -->
+        <!-- navigation -->
+        <header class="nav-wrapper">
+            <!-- left side -->
             <div class="left-side">
+                <div class="personal-logo">
+                    <a class="logo" href="https://bherbert7.github.io" title="Brian Herbert">
+                        <img src="staticfiles/images/logos/BHLogoTransp.png" alt="Brian Herbert" title="Brian Herbert">
+                    </a>
+                </div>
                 <div class="brand">
                     <div>BRIAN HERBERT</div>
                 </div>
             </div>
-
+            <!-- left side end -->
+            <!-- right side -->
             <div class="right-side">
                 <div class="nav-link-wrapper active-nav-link">
                     <a href="index.html">Home</a>
                 </div>
-
                  <div class="nav-link-wrapper">
                     <a href="about.html">About</a>
                 </div>
             </div>
-        </div>
+            <!-- right side end -->
+        </header>
+        <!-- navigation end -->
+        <!-- header end -->
 
-        <div class="content-wrapper">
+        <!-- main content -->
+        <div class="portfolio-content-wrapper">
             <div class="portfolio-items-wrapper">
-
+                <!-- top left item -->
                 <div class="portfolio-item-wrapper">  
-                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio1.jpg)"></div>                
-                    
+                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/oldtrafford.jpg)"></div>
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <img src="staticfiles/images/logos/threestripes.png" alt="">
                         </div>
 
-                        <div class="subtitle">This is Old trafford, Manchester, UK.<br>The Theatre of Dreams.</div>
+                        <div class="subtitle">Old trafford.<br>The Theatre of Dreams.</div>
                     </div>
                 </div>
-
+                <!-- top left item end -->
+                
                 <div class="portfolio-item-wrapper">  
-                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio2.jpg)"></div>
+                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/bigben.jpg)"></div>
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -54,14 +66,14 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">  
-                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio3.jpg)"></div>                
+                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/beautifuldesk.jpg)"></div>                
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <img src="staticfiles/images/logos/dragon.png" alt="">
                         </div>
 
-                        <div class="subtitle">Road to Developing.</div>
+                        <div class="subtitle">My journey to becoming a developer.</div>
                     </div>
                 </div>
 
@@ -70,7 +82,9 @@
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
+                            <a href="https://open.spotify.com/playlist/37i9dQZF1E39lSIY6rT4vZ?si=o9G0TOoYQpm5SsOOCDLzxg" title="Daily Spotify Mix">
                             <img src="staticfiles/images/logos/headphones.png" alt="">
+                            </a>
                         </div>
 
                         <div class="subtitle">Music feeds the Soul.</div>
@@ -82,7 +96,9 @@
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
+                            <a href="https://stackoverflow.com/users/13149001/genoxidus" title="Stack Overflow Profile">
                             <img src="staticfiles/images/logos/bountyhunter.png" alt="">
+                            </a>
                         </div>
 
                         <div class="subtitle">Debugging.</div>
@@ -90,7 +106,7 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">  
-                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio6.jpg)"></div>                
+                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/neon.jpg)"></div>                
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -102,7 +118,7 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">  
-                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio7.jpg)"></div>                
+                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/darkside.jpg)"></div>                
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -114,7 +130,7 @@
                 </div>
 
                 <div class="portfolio-item-wrapper">  
-                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio8.jpg)"></div>
+                    <div class="portfolio-img-background" style="background-image:url(staticfiles/images/portfolio3.jpg)"></div>
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <img src="staticfiles/images/logos/blacksun.png" alt="">
@@ -155,7 +171,7 @@
         portfolioItem.childNodes[1].classList.remove('img-darken');
       });
     });
-  
-  </script>
+
+</script>
 
 </html>
