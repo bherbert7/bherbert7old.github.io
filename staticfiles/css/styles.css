@@ -198,19 +198,19 @@ ul.typebtns li:hover {
 ul.typebtns li.grass {
     top: 177px;
     left: 90%;
-    background: #567d46;
+    background: #78C850;
 }
 
 ul.typebtns li.fire {
     top: 147px;
     left: 125%;
-    background: #e25822;
+    background: #F08030;
 }
 
 ul.typebtns li.water {
     top: 117px;
     left: 90%;
-    background: #73b6fe;
+    background: #6890F0;
 }
 
 ul.gens {
@@ -290,47 +290,47 @@ ul.gens li .image {
 ul.gens li.fire1 .image {
     background: url("../images/generations/charmander.png");
     background-size: cover;
-    background-color: red;
+    background-color: #ACD36C;
 }
 
 ul.gens li.fire2 .image {
     background: url("../images/generations/cyndaquil.png");
     background-size: cover;
-    background-color: gold;
+    background-color: #DCD677;
 }
 
 ul.gens li.fire3 .image {
     background: url("../images/generations/torchic.png");
     background-size: cover;
-    background-color: #E0115F;
+    background-color: #9CD7C8;
 }
 
 ul.gens li.gen4 .image {
     background: url("../images/generations/chimchar.png");
     background-size: cover;
-    background-color: #b148d2;
+    background-color: #B7A3C3;
 }
 
 ul.gens li.gen5 .image {
     background: url("../images/generations/tepig.png");
     background-size: cover;
-    background-color: black;
+    background-color: #9FCADF;
 }
 
 ul.gens li.gen6 .image {
     background: url("../images/generations/fennekin.png");
     background-size: cover;
-    background-color: black;
+    background-color: #DD608C;
 }
 
 ul.gens li.gen7 .image {
     background: url("../images/generations/litten.png");
     background-size: cover;
-    background-color: black;
+    background-color: #E89483;
 }
 
 ul.gens li.gen8 .image {
     background: url("../images/generations/scorbunny.png");
     background-size: cover;
-    background-color: black;
+    background-color: #C97DC0;
 }
