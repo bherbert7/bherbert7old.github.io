@@ -131,11 +131,6 @@ body {
 
 /* About styles */
 
-.generations-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
 .about-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -174,9 +169,18 @@ body.generations {
     background: #333;
 }
 
+.generations-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 ul.typebtns {
-    width: 200px;
-    height: 50;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 ul.typebtns li {
@@ -196,20 +200,20 @@ ul.typebtns li:hover {
 }
 
 ul.typebtns li.grass {
-    top: 177px;
-    left: 90%;
+    top: 50px;
+    left: -450px;
     background: #78C850;
 }
 
 ul.typebtns li.fire {
-    top: 147px;
-    left: 125%;
+    top: 21px;
+    left: -379px;
     background: #F08030;
 }
 
 ul.typebtns li.water {
-    top: 117px;
-    left: 90%;
+    top: -8px;
+    left: -450px;
     background: #6890F0;
 }
 
@@ -288,7 +292,7 @@ ul.gens li .image {
 }
 
 ul.gens li.fire1 .image {
-    background: url("../images/generations/charmander.png");
+
     background-size: cover;
     background-color: #ACD36C;
 }
@@ -333,4 +337,73 @@ ul.gens li.gen8 .image {
     background: url("../images/generations/scorbunny.png");
     background-size: cover;
     background-color: #C97DC0;
+}
+
+/* PokeDex styles */
+
+* {
+	box-sizing: border-box;
+}
+
+.pokedex {
+    font-family: "Fira Sans", sans-serif;
+	background: #bdbdb7;
+	background: -webkit-linear-gradient(to bottom, #bb1111, #bdbdb7);
+	background: linear-gradient(to bottom, #bb1111, #bdbdb7);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+h1 {
+	letter-spacing: 3px;
+}
+
+.poke-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.pokemon {
+	background-color: #eee;
+	border-radius: 25px;
+	box-shadow: 0 7px 16px rgba(100, 100, 100, 0.7);
+	margin: 11px;
+	padding: 16px;
+	text-align: center;
+}
+
+.pokemon .img-container {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 52%;
+	width: 120px;
+	height: 120px;
+	text-align: center;
+}
+
+.pokemon .img-container img {
+	margin-top: 16px;
+	max-width: 81%;
+}
+
+.pokemon .info {
+	margin-top: 16px;
+}
+
+.pokemon .number {
+	background-color: #eee;
+	border-radius: 16px;
+	font-size: 0.7em;
+	padding: 7px 11px;
+}
+
+.pokemon .name {
+	margin: 16px 0 7px;
 }

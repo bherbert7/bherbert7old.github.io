@@ -46,21 +46,19 @@
         <div class="generations-content-wrapper">
             <div class="generations-items-wrapper">
                 <div class="generation-item-wrapper">
-                    <div class="types">
+                    <div class="generation-layout">
                         <ul class="typebtns">
                             <!-- buttons (need to make into small diamonds to right) -->
                             <li class="grass" onclick="changeBodyBg('#78C850');changeImg('torchic.png')"></li>
                             <li class="fire" onclick="changeBodyBg('#F08030');"></li>
                             <li class="water" onclick="changeBodyBg('#6890F0');"></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="generation-item-wrapper">
-                    <div class="generation-layout">
                         <!-- Diamond Shape Grid -->
                         <ul class="gens">
                             <li class="fire1">
-                                <div class="image"></div>
+                                <div class="image">
+                                    <img src="staticfiles/images/generations/charmander.png" >
+                                </div>
                             </li>
                             <li class="fire2">
                                 <div class="image"></div>
@@ -98,6 +96,8 @@
         document.ul.li.image = image;
     }
 
+
+    onclick="document.getElementById('myImage').src='pic_bulbon.gif'"
 
 </script>
 </body>
