@@ -292,7 +292,7 @@ ul.gens li .image {
 }
 
 ul.gens li.fire1 .image {
-
+    background: url("../images/generations/charmander.png");
     background-size: cover;
     background-color: #ACD36C;
 }
