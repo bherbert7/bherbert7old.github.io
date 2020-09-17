@@ -2,63 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Brian Herbert">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Generations </title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="staticfiles/css/genstyles.css">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="staticfiles/css/styles.css">
-
+    <title>Generations</title>
 </head>
-<body class="generations">
+<body>
     <div class="container">
-        <!-- header -->
-        <!-- navigation -->
-        <header class="nav-wrapper">
-            <!-- left side -->
+        <header class="top-bar">
             <div class="left-side">
                 <div class="brand">
-                    <div class="personal-logo">
-                        <a class="logo" href="https://bherbert7.github.io" title="Brian Herbert">
-                            <img src="staticfiles/images/logos/BHLogoTransp.png" alt="Brian Herbert" title="Brian Herbert">
-                        </a>
-                    </div>
-                    <div class="name">
-                        <a href="index.html" title="Brian Herbert">Brian Herbert</a>
-                    </div>
+                    <a class="logo" href="https://bherbert7.github.io" title="Brian Herbert">
+                        <div class="personal-logo">
+                            <img src="staticfiles/images/logos/BHLogo.png" alt="BH Logo" title="BH Logo">
+                        </div>
+                        <div class="name">
+                        Brian Herbert</a>
+                        </div>
                 </div>
             </div>
-            <!-- left side end -->
-            <!-- right side -->
-            <div class="right-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">Home</a>
+            <nav class="nav-contents">
+                <div class="right-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
                 </div>
-                 <div class="nav-link-wrapper">
-                    <a href="about.html">About</a>
-                </div>
-            </div>
-            <!-- right side end -->
+            </nav>
         </header>
-        <!-- navigation end -->
+
         <!-- generations content -->
         <div class="generations-content-wrapper">
-            <div class="generations-items-wrapper">
-                <div class="generation-item-wrapper">
                     <div class="generation-layout">
+                        <!--
                         <ul class="typebtns">
-                            <!-- buttons (need to make into small diamonds to right) -->
-                            <li class="grass" onclick="changeBodyBg('#78C850');changeImg('torchic.png')"></li>
+                            /* buttons (need to make into small diamonds to right) */
+                            <li class="grass" onclick="changeBodyBg('#78C850');"></li>
                             <li class="fire" onclick="changeBodyBg('#F08030');"></li>
                             <li class="water" onclick="changeBodyBg('#6890F0');"></li>
-                        </ul>
+                        </ul> 
+                            -->
                         <!-- Diamond Shape Grid -->
                         <ul class="gens">
                             <li class="fire1">
-                                <div class="image">
-                                    <!--<img src="staticfiles/images/generations/charmander.png" > -->
-                                </div>
+                                <div class="image"></div>
                             </li>
                             <li class="fire2">
                                 <div class="image"></div>
@@ -66,25 +59,36 @@
                             <li class="fire3">
                                 <div class="image"></div>
                             </li>
-                            <li class="gen4">
+                            <li class="fire4">
                                 <div class="image"></div>
                             </li>
-                            <li class="gen5">
+                            <li class="fire5">
                                 <div class="image"></div>
                             </li>
-                            <li class="gen6">
+                            <li class="fire6">
                                 <div class="image"></div>
                             </li>
-                            <li class="gen7">
+                            <li class="fire7">
                                 <div class="image"></div>
                             </li>
-                            <li class="gen8">
+                            <li class="fire8">
                                 <div class="image"></div>
                             </li>
+                            <!--
+                            <li class="btns">
+                                <div class="imagebtns">
+                                <ul class="typebtns">
+                                    <li class="grass" onclick="changeBodyBg('#78C850');"></li>
+                                    <li class="fire" onclick="changeBodyBg('#F08030');"></li>
+                                    <li class="water" onclick="changeBodyBg('#6890F0');"></li>
+                                </ul> 
+                                </div>
+                            </li>
+                            -->
                         </ul>                        
                     </div>
-                </div>
-            </div>
+                
+            
         </div>
     </div>
 </div>

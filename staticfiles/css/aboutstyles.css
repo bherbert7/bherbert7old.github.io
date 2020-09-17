@@ -1,0 +1,121 @@
+body {
+    font-family: "Fira Sans", sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+}
+
+/* Nav styles */
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    width: auto;
+    height: 52px;
+    font-size: 100%;
+}
+
+.left-side {
+    display: flex;
+}
+
+.brand {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.brand img {
+    width: 52px;
+    margin-right: 16px;
+    justify-content: center;  
+}
+
+.brand a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.name {
+    justify-content: center;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+}
+
+.right-side {
+    display: flex;
+    margin-top: 16px;
+}
+
+.nav-contents {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.nav-contents > .right-side > div {
+    margin-right: 21px;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 21px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/* About styles */
+
+.about-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-item-wrapper {
+    position: relative;
+}
+
+.about-profile-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+}
+
+.about-content-wrapper h1 {
+    color: firebrick;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-content-wrapper p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: 75px;
+}
