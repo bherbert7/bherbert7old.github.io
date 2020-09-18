@@ -41,6 +41,7 @@ body {
 .name {
     justify-content: center;
     vertical-align: middle;
+    border-bottom: 1px solid black;
 }
 
 .right-side {

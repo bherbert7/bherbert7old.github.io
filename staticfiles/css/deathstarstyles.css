@@ -1,10 +1,6 @@
 body {
     font-family: "Fira Sans", sans-serif;
-    margin: 0px;
-}
-
-.container {
-    display: grid;
+    margin: 0;
 }
 
 /* Nav styles */
@@ -90,48 +86,38 @@ body {
 
 /* Death Star styles */
   
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-  
-/* body */
-.container {
+.ds-tracker-content-wrapper {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    display: flex;
+    overflow: auto;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #aa0101, #520000);
-    font-family: "Fira Sans", sans-serif;
-    font-size: 0.rem;
+    font-size: 0.7rem;
     text-align: center;
-    margin: 0px;
+    position: absolute;
 }
-  
-/* h1 */
+
 h1 {
-    margin-bottom: 30px;
+    /*margin-bottom: 25px;*/
     font-size: 3rem;
     color: #fff;
 }
-  
+
 /* #map */
 /* this is mandatory */
 #map-div {
     width: 800px;
     height: 350px;
     box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    margin: 0 auto;
 }
-  
-/* #details */
+
 #details {
     background-color: rgb(52, 0, 70);
-    padding: 10px;
     color: #fff;
     display: flex;
     width: 800px;
@@ -139,17 +125,18 @@ h1 {
     box-shadow: 7px -2px 8px -1px rgba(0,0,0,0.7);
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
+    margin: 0 auto;
 }
-  
+
 /* all div inside #details */
 #details div {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
-  
+
 /* all span */
 span {
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 7px;
 }

@@ -13,48 +13,71 @@
     <title>ISS Tracker</title>
 </head>
 <body>
-<div class="container">
-    <div class="ds-tracker">
-        <h1>Death Star Tracker</h1>
-        <div id="map-div">
-        <!-- our Map goes here -->
-        </div>
-  
-        <!-- Details about ISS -->
-        <div id="details">
-            <!-- Time -->
-            <div>
-            Time:
-                <span class="time"></span>
+    <div class="container">
+        <header class="top-bar">
+            <div class="left-side">
+                <div class="brand">
+                    <a class="logo" href="https://bherbert7.github.io" title="Brian Herbert">
+                        <div class="personal-logo">
+                            <img src="staticfiles/images/logos/BHLogo.png" alt="BH Logo" title="BH Logo">
+                        </div>
+                        <div class="name">
+                        Brian Herbert</a>
+                        </div>
+                </div>
             </div>
-            <!-- Latitude -->
-            <div>
-            Latitude:
-                <span class="latitude"></span>
+            <nav class="nav-contents">
+                <div class="right-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="ds-tracker-content-wrapper">
+            <h1>Death Star Tracker</h1>
+            <div id="map-div">
+            <!-- our Map goes here -->
             </div>
-            <!-- Longitude -->
-            <div>
-            Longitude:
-                <span class="longitude"></span>
+            <!-- Details about ISS -->
+            <div id="details">
+                <!-- Time -->
+                <div>
+                Time:
+                    <span class="time"></span>
+                </div>
+                <!-- Latitude -->
+                <div>
+                Latitude:
+                    <span class="latitude"></span>
+                </div>
+                <!-- Longitude -->
+                <div>
+                Longitude:
+                    <span class="longitude"></span>
+                </div>
+                <!-- Speed -->
+                <div>
+                Speed:
+                    <span class="speed"></span>
+                </div>
+                <!-- Altitude -->
+                <div>
+                Altitude:
+                    <span class="altitude"></span>
+                </div>
+                <!-- Visibility -->
+                <div>
+                Visibility:
+                    <span class="visibility"></span>
+                </div>
             </div>
-            <!-- Speed -->
-            <div>
-            Speed:
-                <span class="speed"></span>
-            </div>
-            <!-- Altitude -->
-            <div>
-            Altitude:
-                <span class="altitude"></span>
-            </div>
-            <!-- Visibility -->
-            <div>
-            Visibility:
-                <span class="visibility"></span>
-            </div>
-        </div>
+        </div>   
     </div>
-</div>
 
     <!-- Javascript for our Map (Mandatory) -->
     <!-- Make sure you put this AFTER Leaflet's CSS and before script.js -->

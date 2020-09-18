@@ -37,6 +37,12 @@ body {
     text-decoration: none;
 }
 
+.name {
+    justify-content: center;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+}
+
 .right-side {
     display: flex;
 }
