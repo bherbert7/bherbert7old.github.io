@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html is must for parallax effect */
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* common */
+
+body {
+    width: 100%;
+    height: 100%;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #cdcdcd;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #cdcdcd;
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+.btn {
+    background-color: #cdcdcd;;
+    padding: 16px 21px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 11px;
+}
+
+.btn:hover {
+    background-color: #931510;
+    color: #cdcdcd;;
+}
+
+.bounty-btn {
+    border: solid 2px #931510;
+}
+
+.dark-btn {
+    color: #cdcdcd;;
+    background-color: #931510;
+    font-weight: bolder;
+    width: 80%;
+}
+
+.dark-btn:hover {
+    cursor: pointer;
+}
+
+.social-media-icon {
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* end common */
+
+/* header */
+header {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* placing the actual background image using pseudo selector */
+header::before {
+    content: "";
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/bounty/mytho-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+
+nav {
+    padding: 34px 0px;
+    position: fixed;
+    display: flex;
+
+    left: 11%;
+    z-index: 999;
+    width: 80%;
+}
+
+nav div {
+    flex-grow: 1;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-right i {
+    border: 2px solid #931510;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 11px;
+}
+  
+/* end header */
+
+/* section two */
+
+.second-div .container {
+    display: flex;
+}
+
+.sd-left {
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.sd-right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+}
+
+.sd-right img {
+    width: 100%;
+}
+
+/* end section two */
+
+/* section three */
+
+.third-div {
+    background-image: url('../images/bounty/c0nfetti.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+.third-div .container {
+    display: flex;
+    text-align: center;
+}
+
+.third-div div {
+    padding: 25px;
+}
+
+.third-div img {
+    width: 34vw;
+    height: 61vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+  
+/* end section three */
+
+/* section four */
+.fourth-div .container {
+    display: flex;
+}
+
+.fourth-div img {
+    width: 100%;
+}
+
+.fd-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.fd-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.polaroid-back {
+    background-color: #fff;
+    padding: 10px;
+    transform: rotate(7deg);
+    max-width: 250px;
+    position: absolute;
+}
+
+.polaroid-front {
+    background-color: #fff;
+    padding: 11px;
+    transform: rotate(-7deg);
+    max-width: 300px;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+/* end section four */
+
+/* footer */
+
+footer .container {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    border-top: #931510 3px solid;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+    border-bottom: 2px solid #cdcdcd;
+}
+
+.footer-top .logo {
+    font-family: cursive;
+}
+
+.footer-top .social-media-icons {
+    display: flex;
+}
+
+.footer-top i {
+    border: 2px solid #931510;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-middle {
+    padding: 25px 0px;
+    border-bottom: 4px solid #cdcdcd;
+}
+
+.footer-middle ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 16px 0px;
+    border-bottom: 4px solid #cdcdcd;
+}
+  
+/* end footer */
+
+/* media chnages */
+
+@media(max-width: 992px) {
+    .second-div .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sd-right img {
+        width: 100%;
+    }
+
+    .third-div .container {
+        flex-direction: column;
+    }
+
+    .fourth-div .container {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 596px) {
+    .donuts-btn {
+        display: none;
+    }
+}
