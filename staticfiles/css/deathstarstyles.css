@@ -88,12 +88,15 @@ body {
   
 .ds-tracker-content-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow: auto;
     display: inline-block;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #aa0101, #520000);
+    background-image: url('../images/isstracker/deathstarrogueone.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-size: 0.7rem;
     text-align: center;
     position: absolute;

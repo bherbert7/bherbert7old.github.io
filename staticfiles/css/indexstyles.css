@@ -42,6 +42,7 @@ body {
     justify-content: center;
     vertical-align: middle;
     border-bottom: 1px solid black;
+    padding-bottom: 2px;
 }
 
 .right-side {

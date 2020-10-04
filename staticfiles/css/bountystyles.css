@@ -3,23 +3,12 @@
     margin: 0;
 }
 
-/* html is must for parallax effect */
-
-html {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 /* common */
 
 body {
-    width: 100%;
-    height: 100%;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
     font-family: 'Fira Sans', sans-serif;
     background-color: #cdcdcd;
 }
@@ -30,6 +19,7 @@ body {
 }
 
 h1 {
+    font-weight: 700;
     color: #cdcdcd;
     font-weight: 700;
 }
@@ -58,7 +48,7 @@ a {
 
 .btn:hover {
     background-color: #931510;
-    color: #cdcdcd;;
+    color: #cdcdcd;
 }
 
 .bounty-btn {
@@ -91,17 +81,18 @@ ul {
 
 /* header */
 header {
-    width: 100vw;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
+    background-image: url('../images/bounty/mytho-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
 }
 
 header h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 34%;
+    left: 25%;
+    right: 11%;
 }
 
 header .container {
@@ -109,22 +100,6 @@ header .container {
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-/* placing the actual background image using pseudo selector */
-header::before {
-    content: "";
-    min-height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-image: url(../images/bounty/mytho-banner.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    transform: translateZ(-1px) scale(2);
-    z-index: -1;
 }
 
 nav {
@@ -191,7 +166,8 @@ nav div {
 }
 
 .sd-right img {
-    width: 100%;
+    max-width: 350px;
+    padding-right: 16%;
 }
 
 /* end section two */
@@ -215,10 +191,10 @@ nav div {
 }
 
 .third-div img {
-    width: 34vw;
-    height: 61vh;
+    max-width: 400px;
+    height: 350px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
   
 /* end section three */
@@ -261,7 +237,7 @@ nav div {
     background-color: #fff;
     padding: 11px;
     transform: rotate(-7deg);
-    max-width: 300px;
+    max-width: 250px;
     position: relative;
     top: 0;
     text-align: center;
@@ -272,10 +248,8 @@ nav div {
 /* footer */
 
 footer .container {
-    clear: both;
     display: flex;
     flex-direction: column;
-    border-top: #931510 3px solid;
 }
 
 .footer-top {
